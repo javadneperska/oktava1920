@@ -9,6 +9,9 @@ public class Main {
         while(true){
             System.out.println("\n\n\ncislo:");
             int num = kek.nextInt();
+            if(num == 0) {
+                break;
+            }
             if(isPrime(num)){
                 System.out.println(num + " je prvocislo");
             } else {
