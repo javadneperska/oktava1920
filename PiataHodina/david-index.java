@@ -40,7 +40,16 @@ public class Main {
             } else if (choice == 3) {
                 System.out.println("index na vymazanie:");
                 int index = sc.nextInt();
-                field[index] = 0;
+                int[] newfield = new int[field.length-1];
+                for(int i=0; i<field.length-1; i++)
+                {
+                    if(i < index) {
+                        newfield[i] = field[i];
+                    } else if(i >= index){
+                        newfield[i] = field[i+1];
+                    }
+                }
+                field = newfield;
             } else {
                 System.out.println("invalid");
             }
