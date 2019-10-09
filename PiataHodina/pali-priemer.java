@@ -6,22 +6,17 @@
 
 private static void faverage()
     {
-        ArrayList<int[]> list = new ArrayList<int[]>();
         double[] avgs = new double[4];
         int[] ziak1 = {1,2,3,4,5,1};
-        int[] ziak2 = {2,3,1,2,4,5};
+        int[] ziak2 = {2,3,1,2,4,5,5};
         int[] ziak3 = {1,1,1,3,4,5,5};
-        int[] ziak4 = {5,5,5,3,3,3};
+        int[] ziak4 = {1,1,1,1,1};
 
-        list.add(ziak2);
-        list.add(ziak3);
-        list.add(ziak1);
-        list.add(ziak4);
+        avgs[0] = favg(ziak1);
+        avgs[1] = favg(ziak2);
+        avgs[2] = favg(ziak3);
+        avgs[3] = favg(ziak4);
 
-        for(int i =0;i<list.size();i++)
-        {
-            avgs[i] = favg(list.get(i));
-        }
         System.out.println("Najlepsi priemer ma " + fgetIndex(avgs));
 
     }
