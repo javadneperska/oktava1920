@@ -1,0 +1,55 @@
+Zadanie č. 1
+ 1.Vytvorte program, ktorý načíta od používateľa dve ľubovoľné čísla
+ a vypíše na obrazovku ich súčet, rozdiel, súčin a podiel.
+ - program načíta čísla od užívateľa na vstupe
+ - vykoná matematické operácie
+ - vypíše výstup
+ 
+ Zadanie č. 2
+ 1.Vytvorte program, ktorý od používateľa načíta dve celé čísla
+ do premenných Z a K a vypíše všetky párne čísla z intervalu <Z,K>.
+ - program načíta číslo od užívateľa na vstupe
+ - zistí párnosť čísla
+ - vypíše párne čísla
+
+ Zadanie č. 3
+ 1.Vytvorte program, ktorý na vstupe načíta 10 celých kladných
+ čísel a vypíše len tie čísla ktoré sú deliteľné číslom 3 alebo 4.
+
+ Zadanie č. 4
+ 1.Vytvorte program, ktorý umožní používateľovi zadať na
+ vstupe číslo a vypočíta mu hodnotu faktoriálu.
+ - načíta číslo
+ - vypočíta faktoriál cez funkciu
+ - výpis hodnoty
+
+ Zadanie č. 5
+ 1.Vytvorte program, ktorý umožní zadať užívateľovi celé kladné
+ číslo a vypíše či je prvočíslo alebo zložené číslo.
+ - načítanie čísla
+ - vyhodnotenie podľa kritéria
+ - výpis
+
+ Zadanie č. 6
+ 1.Napíšte program, ktorý na základe zadaného čísla mesiaca
+ v kalendári rozhodne, či ide o jarný, letný, jesenný alebo
+ zimný mesiac.
+ - načítanie číselnej hodnoty mesiaca
+ - vyhodnotenie príslušnosti podľa ročného obdobia
+ - výpis ku ktorému ročnému obdobiu patrí
+
+ Zadanie č. 7
+ 1.Napíšte program, ktorý načíta od používateľa nejaké slovo 
+ a vypíše ho na obrazovku, vypíše ho  odzadu, vypíše počet 
+ znakov v danom slove.
+ - načíta slovo
+ - vypíše ho
+ -vypíše ho odzadu
+ -vypíše počet slov
+ 
+ Zadanie č. 8
+ 1.Napíšte program, ktorý vygeneruje pole 20 náhodných celých čísel a bude zisťovať, či sa v ňom vyskytuje číslo, ktoré mu zadá používateľ. Výsledok svojho zistenia (našiel/nenašiel) vypíše na obrazovku.
+ - program načíta číslo od užívateľa
+ - vygeneruje 20 náhodných čísel
+ - zistí či sa medzi nimi nachádza číslo zadané užívateľom a vypíše výsledok
+
