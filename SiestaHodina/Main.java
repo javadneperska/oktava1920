@@ -1,19 +1,24 @@
-package com.company;
+package sk.dneperska;
 import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("zadaj cislo 1");
+
+
         Scanner sc = new Scanner(System.in);
-        double a = sc.nextDouble();
-        System.out.println("zadaj cislo 2");
+        System.out.println("cislo 1:");
 
-        double b = sc.nextDouble();
-        System.out.println("sucet:" + (a+b));
-        System.out.println("minus:" + (a-b));
-        System.out.println("krat:" + (a*b));
-        System.out.println("deleno:" + (a/b));
+        double val1 = sc.nextDouble();
+        System.out.println("cislo 2:");
 
+        double val2 = sc.nextDouble();
+        System.out.println(val1 + val2);
 
+        System.out.println(val1 - val2);
+
+        System.out.println(val1 * val2);
+
+        System.out.println(val1 / val2);
     }
 }
