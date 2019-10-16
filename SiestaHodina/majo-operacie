@@ -16,7 +16,7 @@ public class Main {
         System.out.println("Sucet: " + (a+b));
         System.out.println("Rozdiel: " + (a-b));
         System.out.println("Sucin: " + (a*b));
-        System.out.println("Podiel: " + (a%b));
+        System.out.println("Podiel: " + (a/b));
 
     }
 }
