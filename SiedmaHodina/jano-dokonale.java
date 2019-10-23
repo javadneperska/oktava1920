@@ -1,8 +1,6 @@
 package sk.gymbosak;
 
 import java.util.ArrayList;
-import java.util.Random;
-import java.util.Scanner;
 
 public class Main {
 
