@@ -1,0 +1,12 @@
+PISKVORKY
+
+Datum odovzdania 27. Novembra 2019
+
+Jazyk: Java 1.8
+Hraje sa z konzoly alebo z okna (GUI).
+Uzivatel na zaciatku zada velkost pola AxB (3x3, 3x4, 5x5..). Min velkost je 3x3 a Max je 10x10.
+Uzivatel zada aka dlha musi byt ciara rovnakych znakov preto aby uzivatel vyhral (pozor aby dlzka neprekrocila vysku a sirku pola)
+Hra sleduje, kto je na tahu - prvy tah zacina nahodne.
+Hra vykresluje pole po kazdom tahu.
+Hra konci spojenim rovnakych znakov do vopred zadanej dlzky zvisle, vodorovne alebo diagonalne.
+
