@@ -6,14 +6,8 @@
 
         while(n != 0)
         {
-            int r = n % 10;
-
-            // Find the largest digit
-            largest = Math.max(r, largest);
-
-            // Find the smallest digit
-            smallest = Math.min(r, smallest);
-
+            int r = n % 10;            
+            largest = Math.max(r, largest);            
             n = n / 10;
         }
         System.out.println(largest + " " + smallest);
