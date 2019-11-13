@@ -1,8 +1,7 @@
  private static void fhodina8_4_Cifry()
     {
         int n = sc.nextInt();
-        int largest = 0;
-        int smallest = 9;
+        int largest = 0;        
 
         while(n != 0)
         {
