@@ -1,6 +1,8 @@
  private static void fhodina8_3_ZistiPocet()
     {
-        String sds = "gsdfhijsd;ios;ofh pohprucbyqioy389yhdhsiajhgchssfjkj;ksdjfashigasioahiofgaa YHIOC BIO";
+        System.out.println("zadaj slovo> ");
+        String sds = sc.next();//"gsdfhijsd;ios;ofh pohprucbyqioy389yhdhsiajhgchssfjkj;ksdjfashigasioahiofgaa YHIOC BIO";
+  
         String f = sc.next();
         int count = 0;
         char a = f.charAt(0);
