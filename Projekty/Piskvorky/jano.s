@@ -63,8 +63,16 @@ write_len:
   jmp print
 read_len:
   mov si, 2004h
-  mov bx, draw_map
+  mov bx, check_len
   jmp read_char
+check_len:
+  mov ch, [2000h]
+  mov cl, [2002h]
+  mov ah, [2004h]
+  cmp ah, cl
+  jg height_end
+  cmp ah, ch
+  jg height_end
 draw_map:
   xor dx, dx
   mov ch, [2000h]
@@ -164,8 +172,8 @@ exit:
 str_enter: db "Zadaj ", 0
 str_width: db "sirku", 0xA, 0xD, 0
 str_height: db "vysku", 0xA, 0xD, 0
-str_prx: db "x", 0xA, 0xD, 0
-str_pry: db "y", 0xA, 0xD, 0
+str_prx: db "x (od 0)", 0xA, 0xD, 0
+str_pry: db "y (od 0)", 0xA, 0xD, 0
 str_len: db "vyhernu dlzku", 0xA, 0xD, 0
 str_x: db "|X", 0
 str_o: db "|O", 0
