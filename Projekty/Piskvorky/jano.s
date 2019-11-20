@@ -3,6 +3,8 @@ bits 16
 org 0x7c00
 
   mov sp, 1000h
+  mov cl, 1
+  mov [1998h], cl
   mov bx, write_width
 write_enter:
   mov si, str_enter
@@ -102,6 +104,14 @@ map_end:
   mov si, str_end
   jmp print
 game_loop:
+  mov bx, game_loop_rd
+  jmp write_enter  
+game_loop_rd:
+  mov si, str_prx
+  mov bx, game_loop_rd2
+  jmp print
+game_loop_rd2:
+  mov cl, [1998h]
   mov bx, game_loop_xdone
 game_loop_read:
   mov ah, 0h
@@ -117,8 +127,33 @@ game_loop2:
   sub al, 30h
   jmp jump_bx
 game_loop_xdone:
-
+  xor dh, dh
+  mov dl, al
+  mov bx, game_loop_rd3
+  jmp write_enter  
+game_loop_rd3:
+  mov si, str_pry
+  mov bx, game_loop_rd4
+  jmp print
+game_loop_rd4:
+  mov bx, game_loop_ydone
+  jmp game_loop_read
+game_loop_ydone:
+  xor ah, ah
+  mul ch
+  add dl, al
+  add dx, 2006h
+  mov bx, dx
+  mov [bx], cl
+  inc cl
+  cmp cl, 3
+  je fix_cl
+game_loop_final:
+  mov [1998h], cl
   jmp draw_map
+fix_cl:
+  mov cl, 1
+  jmp game_loop_final
 exit:
   mov ah, 0Eh
   mov al, 57h
@@ -129,6 +164,8 @@ exit:
 str_enter: db "Zadaj ", 0
 str_width: db "sirku", 0xA, 0xD, 0
 str_height: db "vysku", 0xA, 0xD, 0
+str_prx: db "x", 0xA, 0xD, 0
+str_pry: db "y", 0xA, 0xD, 0
 str_len: db "vyhernu dlzku", 0xA, 0xD, 0
 str_x: db "|X", 0
 str_o: db "|O", 0
