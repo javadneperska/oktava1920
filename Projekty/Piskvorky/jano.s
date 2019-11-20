@@ -53,11 +53,30 @@ read_height:
   mov bx, height_end
   jmp read_char
 height_end:
+  mov bx, write_len
+  jmp write_enter
+write_len:
+  mov si, str_len
+  mov bx, read_len
+  jmp print
+read_len:
+  mov si, 2004h
+  mov bx, len_end
+  jmp read_char
+len_end:
+  mov ah, 0Eh
+  mov al, 57h
+  int 10h
   hlt
   jmp $
 
 str_enter: db "Enter ", 0
 str_width: db "width (3-10)", 0xA, 0xD, 0
 str_height: db "height (3-10)", 0xA, 0xD, 0
+str_len: db "winning length", 0xA, 0xD, 0
+str_x: db "|X", 0
+str_o: db "|O", 0
+str_n: db "| ", 0
+str_end: db "|", 0xA, 0xD, 0
 times 510-($-$$) db 0
 dw 0xAA55
