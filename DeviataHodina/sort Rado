@@ -1,0 +1,34 @@
+package com.company;
+
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Scanner;
+
+
+
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Dlzka pola");
+        int length = s.nextInt();
+        int [] myArray = new int[length];
+        System.out.println("Hodnoty");
+
+        for(int i=0; i<length; i++ ) {
+            myArray[i] = s.nextInt();
+        }
+        System.out.println(Arrays.toString(myArray));
+
+        Arrays.sort(myArray);
+        System.out.println("After Sorting:");
+        for(int counter: myArray){
+            System.out.println(counter);
+
+
+    }
+
+
+    }}
