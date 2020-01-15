@@ -1,0 +1,73 @@
+Pisomka c. 2
+
+1.)
+Vytvorte premennu s nazvom menoAuta s hodnotou "Skoda"
+
+String menoAuta= "Skoda";
+
+2.)
+Dopln premenne:
+____ myNum = 9; int
+____ myFloatNum = 8.99f; float
+____ myLetter = 'A'; char
+____ myBool = false; boolean
+____ myText = "Hello World"; String
+
+
+3.)
+Spojte tieto stringy pomocou metody concat()
+String firstName = "John ";
+String lastName = "Doe";
+
+String text = firstName.concat(lastName);
+
+4.)
+Vypis "1" ak x je rovne y, "2" ak x je vacsie y, 
+inak vypis "3".
+
+int x = 50;
+int y = 50;
+____(x __ y) {     				if , ==
+  System.out.println("1");
+} 
+ ____ (x > y) {					else if
+  System.out.println("2");
+} 
+ ____{							else
+  System.out.println("3");
+} 
+
+
+5.)
+pouzite do/while na vypis i pokial bude mensie ako 6
+int i = 1;
+___ {  						do
+  System.out.println(i);
+  i++;
+}
+_____ (i < 6);				while
+
+
+6.)
+Vytvor objekt triedy MyClass a zavolaj metodu myMethod 
+v main-e.
+
+class MyClass {
+ public void myMethod() {
+   System.out.println("I just got executed!");
+ }
+}
+public static void main(String[] args) {
+ _____ ;		MyClass myclass = new MyClass();
+ _____ ;		myclass.myMethod();
+}
+
+
+7.)
+Dopln parameter aby main vypisal "John Doe".
+static void myMethod(____ ____) {   		String meno
+  System.out.println( _____ + " Doe");		meno
+}
+public static void main(String[] args) {
+  myMethod("John");
+}
