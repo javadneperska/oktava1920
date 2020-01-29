@@ -1,0 +1,17 @@
+Solo:
+Jan - Dnepercoin
+	- Blockchain
+	- Interface, Fix networking
+	- https://github.com/javadneperska/dnepercoin-core
+	- C#,.net;
+David - Mod do hry GTA San Andreas
+	  - Roleplay Multiplayer script built upon GTA:San
+	  - https://trello.com/b/Ni4AKzez/rpu-development
+	  - PAWN (C like syntax)
+Pavol - Testovaci framework do vybranej hry
+	  - Spresnit parsovanie screenshotov
+	  - Naprogramovat ovladanie postavy
+	  - C#
+	  
+GROUP:
+(dev: Jan, David, Pavol; qa: Marian)- 3D hra v Unity engine
